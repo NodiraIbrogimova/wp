@@ -1,0 +1,50 @@
+$link-color: rgb(0, 0, 0);
+$font-size: 1.5rem;
+$logo-font-size: 2.5rem;
+$shadow: rgb(100 100 111 / 20%) 0 4px 2px -2px;
+
+.header {
+  box-shadow: $shadow;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: $logo-font-size;
+    padding: 0.5em 1.5em;
+    font-weight: 300;
+    //
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.nav {
+  &-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &-link {
+    color: $link-color;
+    font-size: $font-size;
+    text-decoration: none;
+    padding: 1rem;
+  }
+
+  &-link:hover {
+    color: #adadad;
+  }
+}
